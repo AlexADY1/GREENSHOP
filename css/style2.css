@@ -75,6 +75,7 @@ nav ul li a.active {
     flex-grow: 1;
     width: 100%;
     height: calc(100vh - 80px);
+    position: relative;
 }
 
 .text-content {
@@ -104,7 +105,41 @@ nav ul li a.active {
     margin-top: 20px;
 }
 
+.image-content {
+    position: relative;
+}
+
 .image-content img {
     width: 100%;
     max-width: 500px;
+}
+
+.image-content img:first-child {
+    position: relative;
+    z-index: 2;
+    width: 370px;
+}
+
+.image-content img:last-child {
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    width: 170px;
+    z-index: 1;
+}
+
+.login-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-btn img {
+    width: 16px;
+    height: 16px;
 }
