@@ -19,7 +19,8 @@ body {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -37,6 +38,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -56,6 +58,7 @@ header .container {
 nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -159,4 +162,20 @@ nav ul li a.active {
     left: -30px;
     width: 170px;
     z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
