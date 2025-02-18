@@ -71,9 +71,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
 
 .login-btn {
     background: #4CAF50;
@@ -178,4 +175,12 @@ nav ul li a.active {
     nav ul li {
         margin: 10px 0;
     }
+}
+
+.shop {
+    display: flex;
+    color: black;
+    margin: 0 15px;
+    list-style: none;
+    flex-wrap: wrap;
 }
