@@ -45,6 +45,7 @@ header .container {
     color: #4CAF50;
     width: 150px;
     height: 34.3px;
+    margin-right: 229px;
 }
 
 .logo img {
@@ -54,16 +55,16 @@ header .container {
 }
 
 nav {
-    position: relative;
+    flex-grow: 1;
+    /* Расширение навигации */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    position: relative;
-    padding: 0;
+    gap: 25px;
 }
 
 nav ul li {
@@ -112,6 +113,7 @@ nav ul li a.active {
     width: 100px;
     height: 35px;
     justify-content: center;
+    margin-left: 370px;
 }
 
 .login-btn img {
@@ -154,6 +156,13 @@ nav ul li a.active {
     font-weight: 900;
     line-height: 1.2;
     width: 100%;
+}
+
+.text-content p {
+    font-size: 14px;
+    width: 557px;
+    line-height: 22.5px;
+    margin-bottom: 44px;
 }
 
 .highlight {
