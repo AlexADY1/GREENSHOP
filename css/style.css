@@ -2,13 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body,
-html {
-    height: 100%;
-    width: 100%;
+    font-family: 'Cera Pro', sans-serif;
 }
 
 body {
@@ -29,16 +23,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background: #fff;
     width: 100%;
+    border-bottom: 2px solid #ddd;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    height: 53px;
 }
 
 .logo {
@@ -47,6 +43,8 @@ header .container {
     font-size: 24px;
     font-weight: bold;
     color: #4CAF50;
+    width: 150px;
+    height: 34.3px;
 }
 
 .logo img {
@@ -55,32 +53,61 @@ header .container {
     margin-right: 10px;
 }
 
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    position: relative;
+    margin: 0 25px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
+    font-size: 18px;
     font-weight: bold;
+    padding: 10px 0;
+    display: inline-block;
+    position: relative;
 }
 
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
 
 .login-btn {
     background: #4CAF50;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 8px;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
 }
 
 .login-btn img {
@@ -96,41 +123,59 @@ nav ul li a {
     background: white;
     flex-grow: 1;
     width: 100%;
+    height: 450px;
+    border-top: 2px solid #ddd;
 }
 
 .banner .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .text-content {
-    max-width: 50%;
+    max-width: 480px;
+    text-align: left;
 }
 
 .text-content h3 {
     color: #777;
-    font-size: 18px;
+    font-size: 16px;
+    width: 205px;
 }
 
 .text-content h1 {
-    font-size: 36px;
+    font-size: 55px;
     font-weight: bold;
+    line-height: 1.2;
+    width: 100%;
 }
 
 .highlight {
     color: #4CAF50;
 }
 
+.text-content p {
+    font-size: 14px;
+    width: 557px;
+    line-height: 22.5px;
+}
+
 .shop-btn {
     display: inline-block;
     background: #4CAF50;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s;
 }
 
@@ -139,48 +184,35 @@ nav ul li a {
 }
 
 .image-content {
+    display: flex;
+    align-items: flex-end;
     position: relative;
 }
 
-.image-content img {
-    width: 100%;
-    max-width: 500px;
+.small-plant {
+    width: 150px;
+    margin-right: -150px;
 }
 
-.image-content img:first-child {
-    position: relative;
-    z-index: 2;
-    width: 370px;
+.large-plant {
+    width: 400px;
 }
 
-.image-content img:last-child {
-    position: absolute;
-    bottom: -20px;
-    left: -30px;
-    width: 170px;
-    z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-    header .container {
+@media (max-width: 1024px) {
+    .banner .container {
         flex-direction: column;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        padding: 10px 0;
+    .text-content {
+        max-width: 90%;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    .text-content h1 {
+        font-size: 45px;
     }
-}
 
-.shop {
-    display: flex;
-    color: black;
-    margin: 0 15px;
-    list-style: none;
-    flex-wrap: wrap;
+    .image-content {
+        justify-content: center;
+    }
 }
