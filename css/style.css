@@ -75,7 +75,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     padding: 10px 0;
     display: inline-block;
     position: relative;
@@ -94,6 +94,10 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+nav ul li a.active {
+    font-weight: 700;
 }
 
 .login-btn {
@@ -147,7 +151,7 @@ nav ul li a:hover::after {
 
 .text-content h1 {
     font-size: 55px;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 1.2;
     width: 100%;
 }
