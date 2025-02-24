@@ -56,7 +56,6 @@ header .container {
 
 nav {
     flex-grow: 1;
-    /* Расширение навигации */
     display: flex;
     justify-content: space-between;
 }
@@ -80,6 +79,7 @@ nav ul li a {
     padding: 10px 0;
     display: inline-block;
     position: relative;
+    white-space: nowrap;
 }
 
 nav ul li a::after {
