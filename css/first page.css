@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -181,6 +181,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 70px 33px;
+    font-weight: 700;
 }
 
 .product {
@@ -220,6 +221,7 @@ body {
     align-items: center;
     margin-top: 90px;
     padding-bottom: 82px;
+    font-weight: 700;
 }
 
 .page-btn {
