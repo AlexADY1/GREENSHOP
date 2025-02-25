@@ -42,19 +42,9 @@ body {
     color: #333;
 }
 
-.sidebar a:hover {
-    color: green;
-}
-
+.sidebar a:hover,
 .sidebar a.active {
-    font-weight: bold;
     color: green;
-}
-
-.sidebar ul li a {
-    display: flex;
-    justify-content: space-between;
-    font-weight: normal;
 }
 
 .sale-banner {
@@ -76,7 +66,6 @@ body {
     font-weight: bold;
     color: #2a7d2e;
     position: relative;
-    display: inline-block;
 }
 
 .sale-banner h2::before,
@@ -87,7 +76,6 @@ body {
     width: 4px;
     height: 20px;
     background: #2a7d2e;
-    left: 10%;
 }
 
 .sale-banner h2::after {
@@ -98,7 +86,6 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: #333;
-    margin-top: -10px;
 }
 
 .sale-banner img {
@@ -116,41 +103,34 @@ body {
 
 .filters {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.filter-links {
+    display: flex;
+    gap: 38px;
+    white-space: nowrap;
+}
+
+.sorting {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .filters a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
-    margin-right: 37px;
+    font-weight: 400;
     position: relative;
     transition: color 0.3s ease;
-    font-weight: 400;
 }
 
-.filters a:nth-child(1) {
-    width: 66px;
-    height: 16px;
-}
-
-.filters a:nth-child(2) {
-    width: 86px;
-    height: 16px;
-}
-
-.filters a:nth-child(3) {
-    width: 29px;
-    height: 16px;
-}
-
-.filters .sorting {
-    margin-left: 385px;
-}
-
-.filters a:hover {
+.filters a:hover,
+.filters a.active {
     color: green;
 }
 
@@ -165,14 +145,7 @@ body {
     transition: width 0.3s ease;
 }
 
-.filters a:hover::after {
-    width: 100%;
-}
-
-.filters a.active {
-    color: green;
-}
-
+.filters a:hover::after,
 .filters a.active::after {
     width: 100%;
 }
@@ -181,7 +154,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 70px 33px;
-    font-weight: 400;
 }
 
 .product {
@@ -223,6 +195,7 @@ body {
     padding-bottom: 82px;
     font-weight: 700;
     width: 100%;
+    grid-column: 3;
 }
 
 .page-btn {
@@ -239,11 +212,7 @@ body {
     margin-left: 10px;
 }
 
-.page-btn.active {
-    background: green;
-    color: white;
-}
-
+.page-btn.active,
 .page-btn:hover {
     background: green;
     color: white;
