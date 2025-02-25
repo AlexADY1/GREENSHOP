@@ -217,11 +217,12 @@ body {
 
 .pagination {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 90px;
     padding-bottom: 82px;
     font-weight: 700;
+    width: 100%;
 }
 
 .page-btn {
