@@ -22,7 +22,7 @@ body {
     height: 292px;
     background-color: #f8f8f8;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -31,7 +31,7 @@ body {
     width: 287px;
     height: 292px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0;
     margin-right: 20px;
 }
 
@@ -119,7 +119,7 @@ body {
 article {
     width: 270px;
     background: #f8f8f8;
-    border-radius: 10px;
+    border-radius: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: left;
@@ -131,6 +131,7 @@ article img {
     width: 100%;
     height: 170px;
     object-fit: cover;
+    border-radius: 0;
 }
 
 article h3 {
@@ -174,7 +175,7 @@ article p {
 }
 
 .arti:hover {
-    color: #666;
+    color: #45a049;
 }
 
 @media (max-width: 768px) {
