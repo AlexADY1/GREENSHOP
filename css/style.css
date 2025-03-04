@@ -229,3 +229,53 @@ nav ul li a.active {
         justify-content: center;
     }
 }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    display: none;
+    min-width: 180px;
+    z-index: 100;
+    background-color: #EDF6EE;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu-menu {
+    position: absolute;
+    top: -30px;
+    left: 120%;
+    background: white;
+    border: 1px solid #ddd;
+    display: none;
+    min-width: 180px;
+    z-index: 101;
+    background-color: #EDF6EE;
+    padding: 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.submenu:hover .submenu-menu {
+    display: block;
+}
+
+.submenu:hover .submenu-menu,
+.submenu-menu:hover {
+    display: block;
+}
+
+.submenu:focus-within .submenu-menu {
+    display: block;
+}
