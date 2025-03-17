@@ -1,12 +1,12 @@
 body {
     font-family: 'Cera Pro', sans-serif;
-    margin: 0;
-    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .features-section {
-    padding: 40px 20px;
-    border: 1px solid #007aff;
+    padding: 40px 20px 0;
+    margin-bottom: 64px;
 }
 
 .features-container {
@@ -14,11 +14,24 @@ body {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.feature-card,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
 }
 
 .feature-card {
-    width: 20%;
-    min-width: 180px;
+    width: 204px;
+    height: 202px;
 }
 
 .feature-card img {
@@ -32,8 +45,8 @@ body {
 }
 
 .newsletter {
-    width: 30%;
-    min-width: 250px;
+    width: 354px;
+    height: 202px;
 }
 
 .newsletter h4 {
@@ -61,10 +74,19 @@ body {
     border-radius: 0 5px 5px 0;
 }
 
+footer {
+    max-width: 1200px;
+    height: 236px;
+    margin: 0 auto;
+}
+
 .footer-top {
     background: linear-gradient(to right, #e3f1dc, #36b66f);
     padding: 20px;
     color: #333;
+    max-width: 1200px;
+    height: 88px;
+    margin: 0 auto;
 }
 
 .footer-top-content {
@@ -78,15 +100,30 @@ body {
     gap: 155px;
 }
 
+.footer-contact img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
     font-size: 14px;
+    gap: 10px;
 }
 
 .logo {
     font-weight: bold;
     font-size: 18px;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 footer {
@@ -124,13 +161,27 @@ footer {
     border-radius: 5px;
 }
 
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 .payment-icons img {
     height: 20px;
     margin-right: 10px;
 }
 
-copyright {
+.copyright {
     text-align: center;
     font-size: 14px;
     color: #666;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
