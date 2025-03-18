@@ -81,18 +81,23 @@ footer {
 }
 
 .footer-top {
-    background: linear-gradient(to right, #e3f1dc, #36b66f);
+    background: linear-gradient(to right, #EDF6EF, #52C368);
     padding: 20px;
     color: #333;
     max-width: 1200px;
     height: 88px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-top-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .footer-contact {

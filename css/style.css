@@ -279,3 +279,185 @@ nav ul li a.active {
 .submenu:focus-within .submenu-menu {
     display: block;
 }
+
+/* CSS for Features Section */
+.features-section {
+    padding: 40px 20px 0;
+    margin-bottom: 64px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.feature-card,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.feature-card {
+    width: 204px;
+    height: 202px;
+}
+
+.feature-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-card h4 {
+    font-weight: 600;
+}
+
+.newsletter {
+    width: 354px;
+    height: 202px;
+}
+
+.newsletter h4 {
+    font-weight: bold;
+}
+
+.subscribe {
+    display: flex;
+    margin: 10px 0;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #f3f3f3;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe button {
+    background-color: #46a358;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+footer {
+    max-width: 1200px;
+    height: 236px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    background: linear-gradient(to right, #EDF6EF, #52C368);
+    padding: 20px;
+    color: #333;
+    max-width: 1200px;
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 155px;
+}
+
+.footer-contact img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+}
+
+footer .column {
+    width: 22%;
+}
+
+footer .column h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .column ul {
+    list-style-type: none;
+}
+
+footer .column ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .payment-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    padding: 20px 0;
+}
+
+@media (max-width: 1024px) {
+    footer .footer-columns {
+        flex-direction: column;
+    }
+
+    footer .column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
