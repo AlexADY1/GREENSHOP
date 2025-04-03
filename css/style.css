@@ -10,11 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -39,6 +40,11 @@ header .container {
     align-items: center;
     max-width: 1200px;
     height: 53px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .logo {
@@ -140,7 +146,7 @@ nav ul li a.active {
 }
 
 .text-content {
-    max-width: 480px;
+    max-width: 100%;
     text-align: left;
 }
 
@@ -151,7 +157,7 @@ nav ul li a.active {
 }
 
 .text-content h1 {
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 900;
     line-height: 1.2;
     width: 100%;
@@ -204,6 +210,11 @@ nav ul li a.active {
     display: flex;
     align-items: flex-end;
     position: relative;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
 }
 
 .small-plant {
@@ -951,3 +962,48 @@ article p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .banner .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .container,
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+    }
+
+    .shop-btn {
+        width: 100%;
+    }
+}

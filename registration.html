@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div></div>
+    </div>
     <div class="container">
         <h2>Login | <span>Register</span></h2>
         <p>Enter your email and password to register.</p>
@@ -37,6 +40,11 @@
                     <img src="images/eye_icon.png" alt="Eye">
                 </button>
             </div>
+            <label class="custom-checkbox">
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+                I agree to the <a href="#">Terms & Conditions</a>
+            </label>
             <button type="submit">Register</button>
         </form>
         <p>Or register with</p>
@@ -52,6 +60,14 @@
             const input = document.getElementById(id);
             input.type = input.type === 'password' ? 'text' : 'password';
         }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.querySelector(".preloader").classList.add("hide-preloader");
+                document.querySelector(".container").classList.add("show-content");
+            }, 2000);
+        });
     </script>
 </body>
 
